@@ -1,30 +1,23 @@
 .profile-image {
-    width: 40px;  
-    height: 40px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    position: absolute;
-    top: 0; 
-    right: 0; 
-    margin: 10px; 
-}
-
-@media (min-width: 768px) {
-    .profile-image {
-        position: relative; 
-        margin-left: 10px; 
-    }
-}
-
-@media (max-width: 768px) {
-    .card-body {
-        position: relative; 
-        padding-top: 50px; 
-    }
-}
-
-img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .card {
+        position: relative;
+    }
+
+    .profile-image {
+        width: 50px; /* Smaller size for mobile */
+        height: 50px;
+        top: 10px;
+        right: 10px; /* Adjust position to top-right */
+    }
 }

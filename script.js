@@ -32,11 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
             customerCard.innerHTML = `
                 <div class="card h-100">
-                <img src="images/${customer.id}.jpg" alt="${customer.username}'s Picture" class="profile-image" style="width: 304px; height: 270px; object-fit: cover;">
+                <!--<img src="images/${customer.id}.jpg" alt="${customer.username}'s Picture" class="profile-image" style="width: 304px; height: 270px; object-fit: cover;">-->
+                <img src="images/${customer.id}.jpg" alt="${customer.username}'s Picture" class="profile-image">
                     <div class="card-body d-flex flex-column">
                     
                         <div class="d-flex justify-content-between align-items-start">
-                         
+                        
                         </div>
                          <h5 class="card-title" style="font-size: 1.3em;">${customer.name}</h5>
                         <span style="color: gray; font-size: 0.7em;">@${customer.username}</span><br>
