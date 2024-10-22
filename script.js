@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="card-body d-flex flex-column">
                     
                         <div class="d-flex justify-content-between align-items-start">
-                         <img src="images/kurtis.jpg" alt="${customer.username}'s Picture" class="profile-image">
+                         <img src="images/${customer.id}.jpg" alt="${customer.username}'s Picture" class="profile-image" style="width: 270px; height: 270px; object-fit: cover;">
                         </div>
-                         <h5 class="card-title" style="font-size: 0.85em;">${customer.name}</h5>
+                         <h5 class="card-title" style="font-size: 1.3em;">${customer.name}</h5>
                         <span style="color: gray; font-size: 0.7em;">@${customer.username}</span><br>
                         <p style="color: blue; font-size: 0.85em;">"${customer.company.catchPhrase}"</p><br>
                         <p class="card-text" style="font-size: 0.85em;">
