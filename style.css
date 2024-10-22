@@ -1,0 +1,24 @@
+.profile-image {
+    width: 40px;  
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    margin: 10px; 
+}
+
+@media (min-width: 768px) {
+    .profile-image {
+        position: relative; 
+        margin-left: 10px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        position: relative; 
+        padding-top: 50px; 
+    }
+}
